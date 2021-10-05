@@ -106,7 +106,7 @@
      <form name="form1" onSubmit = "return checkPassword(this)"  > 
          Name: <input type="text"  maxlength="20" name="yourname" placeholder="Enter Username"> <br>
           Email: <input type="email" name="Email" placeholder="Enter email-id" ><br>
-        Password: <input type="password" minlength="8" title="Must contain at least  one uppercase and lowercase letter, and at least 8 or more characters and one special character" pattern="(?=^.{8,}$)((?=.\W+))(?![.\n])(?=.[A-Z])(?=.[a-z]).$"" name=password1 placeholder="Enter Password" id="password" required><br>
+        Password: <input type="password" minlength="8" title="Must contain at least  one uppercase and lowercase letter, and at least 8 or more characters and one special character" pattern="(?=^.{8,}$)((?=.\W+))(?![.\n])(?=.[A-Z])(?=.[a-z]).$" name=password1 placeholder="Enter Password" id="password" required><br>
          Confirm  Password: <input type="password" name=password2 placeholder="Re-type password" id="confirm_password" required><br>
          Birth Date: <input type="date" id="birthday" name="birthday"><br>
         City: <select name="city" id="city" value="City" >
