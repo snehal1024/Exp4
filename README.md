@@ -119,10 +119,11 @@
         </div>
         <div class="form-control">
           Confirm  Password: <input type="password" name=password2 placeholder="Re-type password" id="confirm_password" required>
-          <br><br>
-                Birth Date: <input type="date" id="birthday" name="birthday"><br><br>
+        </div>
+        <div class="form-control">
+          Birth Date: <input type="date" id="birthday" name="birthday"></div>
   <!--Gender:
-  <br>
+  <div class="form-control">
   <input type="radio" name="gender">Male <input type="radio" name="gender">Female-->
         Gender:
         <select id="selection">
@@ -130,7 +131,8 @@
           <option>Male</option>
           <option>Female</option>
         </select>
-        <br><br><br>
+        </div>
+        <div class="form-control">
         City: <select name="city" id="city" value="City" >
    <option selected disabled>--Select City--</option>
   <option value="Mumbai">Mumbai</option>
