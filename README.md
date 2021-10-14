@@ -130,7 +130,7 @@
           <option>Male</option>
           <option>Female</option>
         </select>
-        <br><br>
+        <br><br><br>
         City: <select name="city" id="city" value="City" >
    <option selected disabled>--Select City--</option>
   <option value="Mumbai">Mumbai</option>
