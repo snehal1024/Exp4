@@ -123,7 +123,7 @@
         <div class="form-control">
           Birth Date: <input type="date" id="birthday" name="birthday"></div>
   <!--Gender:
-  <div class="form-control">
+  <br>
   <input type="radio" name="gender">Male <input type="radio" name="gender">Female-->
         Gender:
         <select id="selection">
@@ -131,8 +131,8 @@
           <option>Male</option>
           <option>Female</option>
         </select>
-        </div>
-        <div class="form-control">
+       
+        <br>
         City: <select name="city" id="city" value="City" >
    <option selected disabled>--Select City--</option>
   <option value="Mumbai">Mumbai</option>
@@ -143,7 +143,7 @@
   
 
           
-        </div>
+        
         
         <input type="submit" style="background-color:grey" name="Signup" onclick="display();">
       </form>
