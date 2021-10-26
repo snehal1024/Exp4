@@ -8,40 +8,99 @@
   </head>
   <body>
     <script>
-      function validateForm() { let x = document.forms["form1"]["yourname"].value;
- let y = document.forms["form1"]["Email"].value; let z = document.forms["form1"]["password1"].value;
- let a = document.forms["form1"]["password2"].value; 
- let b = document.forms["form1"]["birthday"].value; let c = document.forms["form1"]["city"];
-  if (x == "") { window.alert("Name must be filled out"); 
-  x.focus(); 
-  return false;
-   } 
-   if (y == "") 
-   	{ window.alert("Please enter a valid e-mail address.");
-   y.focus(); return false; 
+     function display() {
+  DispWin = window.open('','NewWin',  'toolbar=no,status=no,width=600,height=400')
+ message = "<ul><li><b>NAME: </b>" + document.form1.yourname.value;
+ message += "<li><b>Email: </b>" + document.form1.Email.value;
+ message += "<li><b>Password: </b>" + document.form1.password1.value ;
+ message += "<li><b>Confirm Password: </b>" + document.form1.password2.value ;
+ message += "<li><b>Birthdate: </b>" + document.form1.birthday.value;
+ message += "<li><b>City: </b>" + document.form1.city.value 
+ message += "<li><b>Languages Known: </b>" 
+
+
+
+  var checkBox = document.getElementById("first");
+  var checkBox1 = document.getElementById("second");
+  var checkBox2 = document.getElementById("third");
+ 
+
+  if (checkBox.checked == true){
+   message += "<li>C++</li>"
+  } else {
+    text.style.display = "none";
+  }
+
+ if (checkBox1.checked == true){
+   message += "<li>Java</li>"
+  } else {
+    text.style.display = "none";
+  }
+
+ if (checkBox2.checked == true){
+   message += "<li>Python</li>"
+  } else {
+    text.style.display = "none";
+  } + "</ul>";
+
+  DispWin.document.write(message);
 }
-    if (z == "")
-     { window.alert( "Please enter your password");
-     z.focus(); return false;
-      } if (a == "") 
-      { window.alert( "Please enter confirm password.");
-       a.focus(); return false; 
-   } 
-       if (b == "") 
-       	{ window.alert("Please enter your Birthdate");
-        b.focus(); return false;
-        } if (c.selectedIndex < 2) { alert("Please select your city.");
-         c.focus(); return false;
-          } 
-          return true;
-          }
-           function display()
-          { 
-          	DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=600,height=400') message = "<ul><li><b>NAME: </b>" + document.form1.yourname.value; message += "<li><b>Email: </b>" + document.form1.Email.value; message += "<li><b>Confirm Password: </b>" + document.form1.password2.value ; message += "<li><b>Birthdate: </b>" + document.form1.birthday.value; message += "<li><b>City: </b>" + document.form1.city.value message += "<li><b>Languages Known: </b>" var checkBox = document.getElementById("first"); var checkBox1 = document.getElementById("second"); var checkBox2 = document.getElementById("third"); if (checkBox.checked == true){ message += "<li>C++</li>" } else { text.style.display = "none"; } if (checkBox1.checked == true){ message += "<li>Java</li>" } else { text.style.display = "none"; } if (checkBox2.checked == true){ message += "<li>Python</li>" } else { text.style.display = "none"; } + "</ul>"; DispWin.document.write(message);} 
+
       
+            // Function to check Whether both passwords 
+      
+            // is same or not. 
+      
+            function checkPassword(form) { 
+      
+                password1= form.password1.value; 
+      
+                password2 = form.password2.value; 
+      
+        
+      
+                // If password not entered 
+      
+                if (password1 == '') 
+      
+                    alert ("Please enter Password"); 
+      
+                      
+      
+                // If confirm password not entered 
+      
+                else if (password2 == '') 
+      
+                    alert ("Please enter confirm password"); 
+      
+                      
+      
+                // If Not same return False.     
+      
+                else if (password1 != password2) { 
+      
+                    alert ("\nPassword did not match: Please try again...") 
+      
+                    return false; 
+      
+                } 
+      
+        
+      
+                // If same return True. 
+      
+                else{ 
+      
+                    alert("Password Match: Welcome") 
+      
+                    return true; 
+      
+                } 
+      
+            } 
    <script>
     <div class="container">
-       <form name="form1" onSubmit = "return ((validateForm() & checkPassword(this) & display())== 1)" method="post" >
+       <form name="form1" onSubmit = "return checkPassword(this)"  > 
       <form id="form" class="form">
         <h2>Registration Form</h2>
         <div class="form-control">
