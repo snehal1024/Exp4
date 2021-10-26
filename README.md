@@ -7,8 +7,9 @@
     
   </head>
   <body>
-    <script>
-     function display() {
+    <script> 
+      
+          function display() {
   DispWin = window.open('','NewWin',  'toolbar=no,status=no,width=600,height=400')
  message = "<ul><li><b>NAME: </b>" + document.form1.yourname.value;
  message += "<li><b>Email: </b>" + document.form1.Email.value;
@@ -98,9 +99,10 @@
                 } 
       
             } 
-   <script>
+      
+        </script> 
     <div class="container">
-       <form name="form1" onSubmit = "return checkPassword(this)"  > 
+      <form name="form1" onSubmit = "return checkPassword(this)"  > 
       <form id="form" class="form">
         <h2>Registration Form</h2>
         <div class="form-control">
@@ -117,11 +119,10 @@
         </div>
         <div class="form-control">
           Confirm  Password: <input type="password" name=password2 placeholder="Re-type password" id="confirm_password" required>
-        </div>
-        <div class="form-control">
-          Birth Date: <input type="date" id="birthday" name="birthday"></div>
+          <br><br>
+                Birth Date: <input type="date" id="birthday" name="birthday"><br><br>
   <!--Gender:
-  <br><br>
+  <br>
   <input type="radio" name="gender">Male <input type="radio" name="gender">Female-->
         Gender:
         <select id="selection">
@@ -129,19 +130,18 @@
           <option>Male</option>
           <option>Female</option>
         </select>
-       
-        <br><br>
+        <br><br><br>
         City: <select name="city" id="city" value="City" >
    <option selected disabled>--Select City--</option>
   <option value="Mumbai">Mumbai</option>
   <option value="Delhi">Delhi</option>
   <option value="Pune">Pune</option>
   <option value="Bangalore">Bangalore</option>
-</select><br><br>
+</select><br>
   
 
           
-        
+        </div>
         
         <input type="submit" style="background-color:grey" name="Signup" onclick="display();">
       </form>
