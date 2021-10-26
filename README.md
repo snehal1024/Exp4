@@ -78,8 +78,7 @@
         </div>
         <div class="form-control">
          <label for="email"><h3>Email</h3></label>
-                <input class="input" required="required" type="email" name="email" placeholder="Email" id="mail"><br>
-              
+                <input class="input" required="required" type="email" name="email" placeholder="Email" id="mail">          
           
         </div>
         <div class="form-control">
