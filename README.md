@@ -116,14 +116,12 @@
                     <input type="checkbox" id="javaScript" name="pl" value="javaScript">
                     <label class="input" for="javaScript"> JavaScript</label><br>
                     <input type="checkbox" id="python" name="pl" value="python">
-                    <label class="input" for="python"> Python</label><br>
-<br>
-  
+                    <label class="input" for="python"> Python</label>
 
           
         </div>
         
          <button id="btn" type="submit" class="main__btn" onclick="myFunction();">Submit</button>
-                <br>
+              
    
     
