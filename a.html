@@ -117,7 +117,7 @@
                     <label class="input" for="javaScript"> JavaScript</label><br>
                     <input type="checkbox" id="python" name="pl" value="python">
                     <label class="input" for="python"> Python</label><br>
-</select><br>
+<br>
   
 
           
@@ -125,5 +125,5 @@
         
          <button id="btn" type="submit" class="main__btn" onclick="myFunction();">Submit</button>
                 <br>
-      </form>
+   
     
